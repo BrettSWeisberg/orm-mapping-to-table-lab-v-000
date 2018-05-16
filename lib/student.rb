@@ -39,7 +39,7 @@ class Student
   end
 
   def self.create(id)
-    Student.new(id[:name],id[:grade])
+    Student.new(id[:name],id[:grade]).save
     binding.pry
   end
 
