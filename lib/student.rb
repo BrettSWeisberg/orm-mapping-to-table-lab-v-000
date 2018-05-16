@@ -34,7 +34,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, self.name, self.grade)
-
+    binding.pry
      @id = DB[:conn].execute(sql,"SELECT last_inserted() FROM students")[0][0]
   end
 
