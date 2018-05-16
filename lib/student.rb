@@ -38,7 +38,7 @@ class Student
 
   def self.create(id)
     Student.new(id[:name],id[:grade])
-  #  DB[:conn].execute("SELECT * FROM students WHERE id = ?",id)
+    self.save
   end
 
 
