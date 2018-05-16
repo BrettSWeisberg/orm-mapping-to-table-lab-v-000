@@ -32,7 +32,7 @@ class Student
     INSERT INTO students (name,grade)
     VALUES (?,?)
     SQL
-
+    binding.pry
     DB[:conn].execute(sql, self.name, self.grade)
 
      @id = DB[:conn].execute(sql,"SELECT last_inserted() FROM students") #[0][0]
