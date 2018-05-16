@@ -38,6 +38,7 @@ class Student
 
   def self.create(id)
     Student.new(id[:name],id[:grade])
+    DB[:conn].execute(sql,"SELECT * FROM students")
   end
 
 
