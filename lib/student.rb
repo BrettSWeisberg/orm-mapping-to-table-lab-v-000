@@ -40,7 +40,6 @@ class Student
 
   def self.create(id)
     Student.new(id[:name],id[:grade]).save
-    
   end
 
 
